@@ -10,6 +10,10 @@ sudo: false
 before_install:
   - sudo apt-get update -q
   - sudo apt-get install python3
+
+env:
+  - ENVIRONMENT="development"  
+  
 #after_success: npm run coveralls
 
 # Needed to run Karma with Firefox on Travis
